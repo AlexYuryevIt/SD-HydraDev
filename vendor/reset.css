@@ -1,8 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -16,21 +11,13 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
-}
-body {
-	line-height: 1;
 }
 ol, ul {
 	list-style: none;
@@ -47,3 +34,17 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/*Дополнения к обнуляющим стилям*/
+* {padding: 0;margin: 0;border: 0;}
+*, *:before, *:after {box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;}
+:focus, :active {outline: none;}
+a:focus, a:active {outline: none;}
+html, body {height: 100%;width: 100%;font-size: 100%;line-height: 1;font-size: 14px;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+input, button, textarea {font-family: inherit;}
+input::-ms-clear {display: none;}                 /*Крестик в поле input браузера IE отключен*/
+button {cursor: pointer;}
+button::-moz-focus-inner {padding: 0; border: 0;} /*Отступы кнопок браузера Firefox 0*/ 
+a, a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+img {vertical-align: top;}
+/*----------------------*/

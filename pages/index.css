@@ -1,7 +1,30 @@
-@import url(../vendor/reset.css);
-@import url(../vendor/fonts.css);
-@import url(../pages/index.css);
+@import "../vendor/reset.css";
+@import "../vendor/fonts.css";
+@import "../pages/index.css";
+@import "../blocks/page/page.css";
+@import "../blocks/joinform/joinform.css";
+/* ------------------------------------------------------------------------------- */
 
-@import url(../blocks/page/page.css);
 
-@import url(../blocks/joinform/joinform.css);
+@import "../blocks/components/container.css";
+@import "../blocks/components/header.css";
+@import "../blocks/components/main.css";
+
+.btn {
+   padding: 16px 0 17px 0;
+   height: 48px;
+   display: flex;
+   justify-content: center;
+   font-weight: 700;
+   font-size: 12px;
+   line-height: 15px;
+   text-transform: uppercase;
+   color: #343045;
+   background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+   border-radius: 40px;
+   transition: all .3s ease-in-out;
+}
+.btn:hover {
+   color: black;
+   box-shadow: 0px 0px 15px 5px #8176AF;
+}
