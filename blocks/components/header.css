@@ -1,0 +1,42 @@
+header {
+  padding: 50px 0 0 0;
+}
+header .header__inner {
+  margin: 0 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header__inner .header__logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+header .header__inner .header__logo :first-child {
+  filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.25));
+}
+header .header__inner .header__nav {
+  padding: 0 0 0 64px;
+  display: flex;
+  gap: 41px;
+}
+header .header__inner .header__nav a {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+header .header__inner .header__buttons {
+  display: flex;
+  gap: 38px;
+}
+header .header__inner .header__buttons .header__btn {
+  width: 154px;
+}
+header .header__inner .header__buttons :first-child {
+  padding: 15px 7px 0 0;
+  color: #FFFFFF;
+  background: transparent;
+  border: 2px solid #FFFFFF;
+}
