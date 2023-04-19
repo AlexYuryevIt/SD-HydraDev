@@ -9,6 +9,8 @@
 @import "../blocks/components/container.css";
 @import "../blocks/components/header.css";
 @import "../blocks/components/main.css";
+@import "../blocks/components/intro.css";
+
 
 .btn {
    padding: 16px 0 17px 0;
