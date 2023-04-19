@@ -51,10 +51,12 @@
 
 .input {
   padding-left: 42px;
+  padding-right: 42px;
   border: 2px solid #ffffff;
   border-radius: 40px;
   background-color: transparent;
   height: 72px;
+  color: #fff;
 }
 
 .input::placeholder {
@@ -74,14 +76,10 @@
   width: 100%;
 }
 
-.input_toll {
-  position: relative;
+.input_textarea {
+  padding: 27px 42px;
   height: 210px;
-}
-
-.input_toll::placeholder {
-  position: absolute;
-  top: 27px;
+  resize: none;
 }
 
 .joinform__btn {
@@ -128,7 +126,7 @@
 }
 
 @media (max-width: 425px) {
-  .input_toll::placeholder {
+  .input_textarea::placeholder {
     top: 18px;
   }
   .btn_send {
