@@ -1,4 +1,5 @@
 .joinform__inner {
+  margin: 0 auto;
   padding: 90px 108px;
   width: 100%;
   display: flex;
@@ -87,9 +88,13 @@
   margin: 0 auto;
 }
 
+.btn_send {
+  width: 214px;
+}
+
 @media (max-width: 1199px) {
   .joinform__inner {
-    padding: 45px 59px;
+    padding: 60px 88px;
   }
 }
 
@@ -126,7 +131,7 @@
   .input_toll::placeholder {
     top: 18px;
   }
-  .btn_wide_joinform {
+  .btn_send {
     width: 284px;
   }
 }

@@ -28,10 +28,6 @@
   box-shadow: 0px 0px 15px 5px #8176af;
 }
 
-.btn_wide {
-  width: 214px;
-}
-
 @media (max-width: 767px) {
   .btn {
     font-size: 14px;
