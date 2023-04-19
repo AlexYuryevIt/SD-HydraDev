@@ -1,0 +1,137 @@
+.joinform__inner {
+  margin: 0 auto;
+  padding: 90px 108px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: radial-gradient(50% 50% at 50% 50%, #403a5f 0%, #211e2e 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+}
+
+.joinform__title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  text-transform: uppercase;
+}
+
+.joinform__divider {
+  display: flex;
+  margin: 0 auto 30px;
+  height: 1px;
+  width: 414px;
+  background: linear-gradient(
+    270deg,
+    #343045 0%,
+    #c0b7e8 34.9%,
+    #8176af 68.75%,
+    #343045 100%
+  );
+}
+
+.joinform__subtitle {
+  margin-bottom: 65px;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+}
+
+.inputs-list {
+  margin: 0 auto 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 33px 10px;
+}
+
+.input {
+  padding-left: 42px;
+  border: 2px solid #ffffff;
+  border-radius: 40px;
+  background-color: transparent;
+  height: 72px;
+}
+
+.input::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+}
+
+.input_short {
+  width: calc(50% - 5px);
+}
+
+.input_fullwidth {
+  width: 100%;
+}
+
+.input_toll {
+  position: relative;
+  height: 210px;
+}
+
+.input_toll::placeholder {
+  position: absolute;
+  top: 27px;
+}
+
+.joinform__btn {
+  margin: 0 auto;
+}
+
+.btn_send {
+  width: 214px;
+}
+
+@media (max-width: 1199px) {
+  .joinform__inner {
+    padding: 60px 88px;
+  }
+}
+
+@media (max-width: 767px) {
+  .joinform__inner {
+    padding: 45px 21px;
+    border-radius: 40px;
+  }
+  .joinform__title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .joinform__divider {
+    display: flex;
+    margin: 0 auto 20px;
+    width: 117px;
+  }
+  .joinform__subtitle {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .inputs-list {
+    gap: 22px;
+  }
+  .input {
+    padding-left: 29px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .input_toll::placeholder {
+    top: 18px;
+  }
+  .btn_send {
+    width: 284px;
+  }
+}
