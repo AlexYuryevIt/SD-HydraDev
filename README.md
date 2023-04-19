@@ -17,6 +17,8 @@
 
 Владислав - https://github.com/Vladislavgolovin95
 
+Валентина - https://github.com/valentinats
+
 Константин - https://github.com/KonstantinKZH
 
 Сергей - https://github.com/Ssavl420
