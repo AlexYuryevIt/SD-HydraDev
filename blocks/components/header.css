@@ -35,7 +35,6 @@ header .header__inner .header__buttons .header__btn {
   width: 154px;
 }
 header .header__inner .header__buttons :first-child {
-  padding: 15px 7px 0 0;
   color: #FFFFFF;
   background: transparent;
   border: 2px solid #FFFFFF;
