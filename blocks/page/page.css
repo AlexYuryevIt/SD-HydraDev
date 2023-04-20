@@ -3,6 +3,9 @@ html {
 }
 
 .page {
+  margin: 0 auto;
+  max-width: 100%;
+  background: #302C42;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   color: #ffffff;
