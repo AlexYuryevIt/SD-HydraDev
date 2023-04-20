@@ -63,6 +63,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     gap: 118px;
+    margin-bottom: 111px;
 }
 .about_title-wrapper {
     display: flex;
