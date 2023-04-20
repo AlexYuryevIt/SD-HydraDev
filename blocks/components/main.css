@@ -89,14 +89,16 @@
 }
 .main .main__inner .main__contacts {
   padding: 25px 54px;
-  display: flex;
-  align-items: center;
-  flex: 0 1 100%;
-  gap: 94px;
   height: 167px;
   background: radial-gradient(50% 2900.76% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
   box-shadow: 0px 4px 4px rgba(192, 183, 232, 0.01);
   border-radius: 90px;
+}
+.main .main__inner .main__contacts .desktop {
+  display: flex;
+  align-items: center;
+  flex: 0 1 100%;
+  gap: 94px;
 }
 .main .main__inner .main__contacts .place__text p {
   margin: 0 0 10px 0;
@@ -110,14 +112,14 @@
   line-height: 17px;
   color: #FFFFFF;
 }
-.main .main__inner .main__contacts .contact__place {
+.main .main__inner .main__contacts .desktop .contact__place {
   display: flex;
   align-items: center;
 }
-.main .main__inner .main__contacts .contact__place img {
+.main .main__inner .main__contacts .desktop .contact__place img {
   margin: 0 17px 0 0;
 }
-.main .main__inner .main__contacts .contact__place::after {
+.main .main__inner .main__contacts .desktop .contact__place::after {
   content: "";
   position: relative;
   top: 0;
@@ -126,14 +128,14 @@
   height: 116.5px;
   background: rgba(192, 183, 232, 0.33);
 }
-.main .main__inner .main__contacts .contact__phone {
+.main .main__inner .main__contacts .desktop .contact__phone {
   display: flex;
   align-items: center;
 }
-.main .main__inner .main__contacts .contact__phone img {
+.main .main__inner .main__contacts .desktop .contact__phone img {
   margin: 0 34px 0 0;
 }
-.main .main__inner .main__contacts .contact__phone::after {
+.main .main__inner .main__contacts .desktop .contact__phone::after {
   content: "";
   position: relative;
   top: 0;
@@ -142,12 +144,103 @@
   height: 116.5px;
   background: rgba(192, 183, 232, 0.33);
 }
-.main .main__inner .main__contacts .contact__massage {
+.main .main__inner .main__contacts .desktop .contact__massage {
   margin: 0 0 0 27px;
   display: flex;
 }
-.main .main__inner .main__contacts .contact__massage img {
+.main .main__inner .main__contacts .desktop .contact__massage img {
   margin: 0 27px 0 0;
+}
+.main .main__inner .main__contacts .slider {
+  display: none;
+}
+@media (max-width:1050px) {
+  .main .main__inner .main__contacts {
+    height: 109px;
+    width: 100%;
+  }
+  .main .main__inner .main__contacts .desktop {
+    display: none;
+  }
+  .main .main__inner .main__contacts .slider {
+    display: flex;
+    max-height: 100%;
+    min-width: 0;
+    position: relative;
+  }
+  .main .main__inner .main__contacts .slider .contact__place,
+  .main .main__inner .main__contacts .slider .contact__phone,
+  .main .main__inner .main__contacts .slider .contact__massage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(250px, 50%, 700px);
+  }
+  .main .main__inner .main__contacts .slider .contact__place img,
+  .main .main__inner .main__contacts .slider .contact__phone img,
+  .main .main__inner .main__contacts .slider .contact__massage img {
+    margin: 0 25px 0 0;
+  }
+  /* ------------------------------------------ */
+  /* Слайдер */
+  .slick-slider{}
+  /* Слайдер запущен */
+  .slick-slider.slick-initialized{}
+  /* Слайдер с точками */
+  .slick-slider.slick-dotted{}
+  /* Ограничивающая оболочка */
+  .slick-list {
+    overflow: hidden;
+  }
+  /* Лента слайдов */
+  .slick-track{
+      display: flex;
+  }
+  /* Слайд */
+  .slick-slide{
+
+  }
+  /* Слайд активный (показывается) */
+  .slick-slide.slick-active{
+
+  }
+  /* Слайд основной */
+  .slick-slide.slick-current{}
+  /* Слайд по центру */
+  .slick-slide.slick-center{}
+  /* Клонированный слайд */
+  .slick-slide.slick-cloned{}
+  /* Стрелка */
+  .slider .slick-arrow{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: calc(50% - 12px);
+    z-index: 2;
+    font-size: 0;
+  }
+  /* Стрелка влево */
+  .slider .slick-arrow.slick-prev{
+    left: -25px;
+    background: url("../../Img/icon/arrow.svg") 0 0 no-repeat;
+  }
+  /* Стрелка вправо */
+  .slider .slick-arrow.slick-next{
+    right: -25px;
+    background: url("../../Img/icon/arrow.svg") 0 0 no-repeat;
+    transform: rotate(180deg);
+
+  }
+  /* Стрелка не активная */
+  .slick-arrow.slick-disabled{}
+  /* Точки (булиты) */
+  .slick-dots{}
+  .slick-dots li{}
+  /* Активная точка */
+  .slick-dots li.slick-active{}
+  /* Элемент точки */
+  .slick-dots li button{}
+  /* ------------------------------------------ */
 }
 @media (max-width:500px) {
   .main .main__inner {

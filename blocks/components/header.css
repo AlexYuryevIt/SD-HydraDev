@@ -43,7 +43,7 @@ header .header__inner .header__buttons :first-child {
 .burger {
   display: none;
 }
-@media (max-width:500px) {
+@media (max-width:767px) {
   header {
     padding: 31px 0 0 0;
   }
