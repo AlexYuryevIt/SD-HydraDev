@@ -3,6 +3,7 @@ header {
 }
 header .header__inner {
   margin: 0 3px;
+  padding: 0 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -42,6 +43,37 @@ header .header__inner .header__buttons :first-child {
 .burger__icon,
 .burger {
   display: none;
+}
+@media (max-width:1050px) {
+  header .header__inner .header__nav {
+    padding: 0;
+    gap: 25px;
+  }
+  header .header__inner .header__buttons {
+    gap: 20px;
+  }
+}
+@media (max-width:920px) {
+  header .header__inner .header__buttons .header__btn {
+    width: 100px;
+  }
+}
+@media (max-width:810px) {
+  header .header__inner .header__logo {
+    height: 85px;
+  }
+  .header__logo img {
+    height: 100%;
+  }
+  .header__logo img:last-child{
+    height: 28px;
+  }
+  header .header__inner .header__nav {
+    gap: 15px;
+  }
+  header .header__inner .header__buttons {
+    gap: 15px;
+  }
 }
 @media (max-width:767px) {
   header {
@@ -113,7 +145,7 @@ header .header__inner .header__buttons :first-child {
     transition: all .5s ease;
   }
   .burger__body {
-    padding: 45px 0 0 0;
+    padding: 80px 0 0 0;
     position: absolute;
     top: 0;
     right: 0;
@@ -161,7 +193,7 @@ header .header__inner .header__buttons :first-child {
   }
   .burger__close {
     position: absolute;
-    top: 30px;
+    top: 64px;
     right: 30px;
   }
 }
