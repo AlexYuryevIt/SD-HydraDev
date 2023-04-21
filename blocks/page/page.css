@@ -8,11 +8,14 @@ html {
   background: #302C42;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.body-lock {
+  overflow: hidden;
 }
