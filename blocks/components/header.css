@@ -164,6 +164,7 @@ header .header__inner .header__buttons :first-child {
     transition: all .5s ease;
     background-color: rgba(0, 0, 0, .8);
     backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
     overflow: auto;
   }
   .burger-active .burger__body {
