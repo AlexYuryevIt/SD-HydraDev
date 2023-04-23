@@ -8,6 +8,7 @@
 @import "../blocks/components/header.css";
 @import "../blocks/components/main.css";
 @import "../blocks/components/intro.css";
+@import "../blocks/components/services.css";
 @import "../blocks/components/joinform.css";
 
 .btn {
