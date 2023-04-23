@@ -3,13 +3,19 @@ html {
 }
 
 .page {
-  font-family: "Montserrat", sans-serif;
   margin: 0 auto;
-  width: 100%;
-  font-family: "Manrope", sans-serif;
+  max-width: 100%;
+  background: #302C42;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.body-lock {
+  overflow: hidden;
 }
