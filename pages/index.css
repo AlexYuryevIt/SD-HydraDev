@@ -5,3 +5,9 @@
 @import url(../blocks/page/page.css);
 
 @import url(../blocks/joinform/joinform.css);
+
+@import url(../blocks/styles/main.css);
+@import url(../blocks/styles/container.css);
+@import url(../blocks/gallery.css);
+@import url(../blocks/slider/slider.css);
+

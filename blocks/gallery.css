@@ -1,0 +1,114 @@
+.hydra-tech__link{
+    z-index: 100;
+    cursor: pointer;
+}
+
+.hydra-tech-arrows{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.hide-block{
+    display: none;
+}
+
+.hydra-tech-arrows__btn{
+    margin: 0 auto;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    width: 60px;
+    height: 60px;
+    padding: 0px 0px;
+    box-shadow: 0px 0px 0 10px rgba(14, 14, 14, 0.32);
+    border-radius: 50%;
+    background: linear-gradient(267.61deg, #C0B7E8 -0.6%, #8176AF 98.31%);
+    transition: all 500ms ease;
+}
+
+/* Анимация для кнопок */
+.hydra-tech-arrows__btn:active{
+    transform: scale(0.9);
+    -moz-box-shadow: 0 0 0 #8176AF;
+    -webkit-box-shadow: 0 0 0 #8176AF;
+    box-shadow: 0 0 0 #8176AF;
+}
+
+@media (max-width: 1307px){
+    .hydra-tech__link{
+        display: block;
+    }
+
+    .hydra-tech_modifier-img1{
+        margin-right: 0px;
+    }
+
+    .hydra-tech_modifier-img2{
+        margin-right: 0px;
+    }
+
+    .hydra-tech_modifier-img3{
+        margin-right: 0px;
+    }
+
+    .hydra-tech_modifier-img4{
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 500px){
+    .hydra-tech__img{
+        display: none;
+        z-index: 90;
+    }
+
+    .open-slide{
+        display: block;
+    }
+
+
+    /* Модификаторы */
+    .hydra-tech_modifier-img1{
+        margin-right: 0px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .hydra-tech_modifier-img2{
+        margin-right: 0px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .hydra-tech_modifier-img3{
+        margin-right: 0px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .hydra-tech_modifier-img4{
+        margin-right: 0px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .hide-block{
+        display: flex;
+    }
+
+    .hydra-tech-arrows__btn{
+        margin: 0;
+        position: relative;
+        left: 0px;
+        top: 0px;
+        width: 48px;
+        height: 48px;
+        padding: 4px 4px;
+    }
+}

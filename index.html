@@ -1,16 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hydra VR</title>
 
-    <link rel="stylesheet" href="./vendor/reset.css" />
-    <link rel="stylesheet" href="./pages/index.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hydra VR</title>
+  <link rel="stylesheet" href="./vendor/reset.css" />
+  <link rel="stylesheet" href="./pages/index.css" />
+</head>
 
-  <body class="page">
-    <header class="header"></header>
-  </body>
+<body class="page">
+
+  <div class="technologies">
+    <div class="container">
+
+      <div class="technologies__content">
+        <picture>
+          <source srcset="resources/images/block__inner1/mask_group_mobile.png" media="(max-width:500px)">
+          <img class="technologies__content-img" src="resources/images/block__inner1/mask_group.png"
+            alt="Девушка с прибором виртуальной реальности">
+        </picture>
+
+        <div class="technologies__information">
+          <h2 class="technologies__header">TECHNOLOGIES & HARDWARE</h2>
+          <p class="technologies__text">USED BY HYDRA VR.</p>
+        </div>
+
+        <!-- Кнопка стрелки вниз -->
+        <img class="js-hydra-tech-arrows__btn hydra-tech-arrows__btn technologies__technologies__button_show-hide" src="resources/icon/arrow-upwards.png" alt="Стлелка">
+
+      </div>
+
+
+      <div class="js-hydra-tech hydra-tech">
+        <div class="hydra-tech__slides">
+          <a class="hydra-tech__link" href="https://www.unrealengine.com/en-US"><img
+              class="hydra-tech__img hydra-tech_modifier-img1 open-slide"
+              src="resources/images/block__inner2/hydra-tech1.png" alt="Unreal" class="hydra-tech__images"></a>
+          <a class="hydra-tech__link" href="https://unity.com/ru"><img class="hydra-tech__img hydra-tech_modifier-img2"
+              src="resources/images/block__inner2/hydra-tech2.png" alt="Unity" class="hydra-tech__images"></a>
+          <a class="hydra-tech__link" href="https://oculus.com/"><img class="hydra-tech__img hydra-tech_modifier-img3"
+              src="resources/images/block__inner2/hydra-tech3.png" alt="Oculus" class="hydra-tech__images"></a>
+          <a class="hydra-tech__link" href="https://www.vive.com/ru/"><img
+              class="hydra-tech__img hydra-tech_modifier-img4" src="resources/images/block__inner2/hydra-tech4.png"
+              alt="Vive" class="hydra-tech__images"></a>
+        </div>
+
+        <!-- Стрелки слайдера -->
+        <div id="btn-elements" class="hydra-tech-arrows hide-block">
+            <img class="hydra-tech-arrows__btn gallery__control-prev" src="resources/icon/arrow-prev.png"
+              alt="Стлелка влево">
+            <img class="hydra-tech-arrows__btn gallery__control-next" src="resources/icon/arrow-next.png"
+              alt="Стлелка вправо">
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </div>
+
+  <script src="scripts/gallery.js"></script>
+  <script src="scripts/slider.js"></script>
+
+</body>
+
 </html>
