@@ -1,37 +1,37 @@
-const ACTIVE_SLIDE_CLASSNAME = 'open-slide';
+const ACTING_SLIDE_CLASSNAME = 'reveal-slide';
 
-const slidesNodes = Array.from(document.querySelectorAll('.hydra-tech__img'));
-console.log(slidesNodes);
-const prevButtonNode = document.querySelector('.gallery__control-prev');
-const nextButtonNode = document.querySelector('.gallery__control-next');
-let activeId;
+const imagesNodes = Array.from(document.querySelectorAll('.hydra-tech__img'));
+console.log(imagesNodes);
+const prevBtnNode = document.querySelector('.gallery__btn-prev');
+const nextBtnNode = document.querySelector('.gallery__btn-next');
+let validId;
 
-init();
+initialization();
 
-function init() {
-    activeId = 0;
+function initialization() {
+    validId = 0;
     
-    prevButtonNode.addEventListener('click', () => {
-        setActiveSlideById(getPrevId());
+    prevBtnNode.addEventListener('click', () => {
+        establishActiveSlideById(receivePrevId());
     });
     
-    nextButtonNode.addEventListener('click', () => {
-        setActiveSlideById(getNextId());
+    nextBtnNode.addEventListener('click', () => {
+        establishActiveSlideById(receiveNextId());
     });
 }
 
-function setActiveSlideById(id) {
-    const currentId = activeId;
-    activeId = id;
+function establishActiveSlideById(id) {
+    const currId = validId;
+    validId = id;
 
-    slidesNodes[currentId].classList.remove(ACTIVE_SLIDE_CLASSNAME)
-    slidesNodes[activeId].classList.add(ACTIVE_SLIDE_CLASSNAME)
+    imagesNodes[currId].classList.remove(ACTING_SLIDE_CLASSNAME)
+    imagesNodes[validId].classList.add(ACTING_SLIDE_CLASSNAME)
 }
 
-function getPrevId() {
-    return activeId === 0 ? slidesNodes.length - 1 : activeId - 1;
+function receivePrevId() {
+    return validId === 0 ? imagesNodes.length - 1 : validId - 1;
 }
 
-function getNextId() {
-    return activeId === (slidesNodes.length - 1) ? 0: activeId + 1;
+function receiveNextId() {
+    return validId === (imagesNodes.length - 1) ? 0: validId + 1;
 }
