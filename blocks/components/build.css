@@ -2,12 +2,10 @@
   margin-bottom: 112px;
 }
 
-.build__inner {
-  padding-bottom: 120px;
-}
-
 .build__title-wrapper {
   display: flex;
+  gap: 29px;
+  margin-bottom: 120px;
 }
 
 .build__title {
@@ -17,85 +15,75 @@
   line-height: 44px;
 }
 
-.build__title-img {
-}
-
-.build__title span {
+.build__title-span {
+  margin-top: 5px;
   font-weight: 300;
   font-size: 36px;
   line-height: 44px;
   color: #ffffff;
 }
 
+.build__title-img {
+  display: block;
+  margin-top: 10px;
+}
+
 .build__text {
+  margin-top: 5px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
 }
 
-.circles__inner {
-}
-
-.circle__waves-line {
-  margin-top: -147px;
-  margin-left: -34px;
-}
-
-.circles__items {
+.numbers__list {
   display: flex;
-  justify-content: space-between;
+  gap: 125px;
+  position: relative;
+  margin: -9px 0 0 100px;
 }
 
-.circle__item {
-  z-index: 1000;
+.number {
   width: 198px;
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
 }
 
-.circle__text-wrapper {
-  background: rgba(13, 13, 13, 0.32);
-  padding: 19px;
-  border-radius: 50%;
-  margin-bottom: 25px;
-}
-
-.circle__item-text {
+.number__text {
+  width: 159px;
   font-weight: 700;
   font-size: 64px;
-  line-height: 78px;
+  line-height: 159px;
   text-align: center;
   color: #343045;
-  padding: 40px 40px;
   background: linear-gradient(251.27deg, #c0b7e8 12.87%, #8176af 89.33%);
   border-radius: 50%;
+  box-shadow: 0 0 0 20px rgba(13, 13, 13, 0.32);
 }
 
-/* .circle__desc-wrapper {
+.number__desc {
   position: relative;
-  display: block;
-} */
-
-.circle__item-desc {
-  width: 198px;
-  margin-top: -33px;
-  margin-left: 41px;
+  margin-left: 10px;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
   color: #ffffff;
 }
 
-.desc-arrow {
-  margin: 3px 0px 5px -9px;
+.number__desc::before {
+position: absolute;
+content: "";
+left: -35.54px;
+background-image: url("/Img/vector/arrow_build.png");
+width: 33px;
+height: 27px;
 }
 
-/* .circle__item-desc:before {
+.numbers__waves-line {
   position: absolute;
   content: "";
-  left: 10px;
-  top: 10px;
-  width: 27.92px;
-  height: 22.33px;
-  background-image: url("/Img/vector/arrow_build.png");
-  background-repeat: no-repeat;
-} */
+  bottom: 120px;
+  right: -111px;
+  z-index: -1;
+}
