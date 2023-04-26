@@ -7,12 +7,13 @@
 @import "../blocks/components/container.css";
 @import "../blocks/components/header.css";
 @import "../blocks/components/main.css";
+@import "../blocks/components/build.css";
+
 @import "../blocks/components/intro.css";
 @import "../blocks/components/services.css";
 @import "../blocks/components/joinform.css";
 @import "../blocks/styles/technologies.css";
 @import "../blocks/styles/gallery.css";
-
 
 .btn {
    padding: 16px 0 17px 0;
