@@ -184,31 +184,30 @@ opacity: 0;
   }
 
   .numbers__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 120px;
-    row-gap: 52px;
-    margin: 0;
+    position: relative;
   }
 
   .number {
-    display: flex;
-    gap: 57px;
-    opacity: 0;
+    display: none;
   }
 
-  .number__slide_active {
+  .number_active {
+    
+    display: flex;
     opacity: 1;
   }
 
   .number__controls-wrapper {
+    position: absolute;
+    top: 338px;
+    width: calc(100% - 6px);
     opacity: 1;
     }
 
   .number__controls {
     display: flex;
     justify-content: space-between;
+    width: calc(100% - 23px);
   }
 
   .number__control-prev {

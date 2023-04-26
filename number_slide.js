@@ -1,4 +1,4 @@
-const ACTIVE_SLIDE_CLASSNAME = 'number__slide_active';
+const ACTIVE_SLIDE_CLASSNAME = 'number_active';
 
 const slidesNodes = Array.from(document.querySelectorAll('.number'));
 console.log(slidesNodes);
