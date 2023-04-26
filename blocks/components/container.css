@@ -3,3 +3,17 @@
   max-width: 1308px;
   padding: 0 15px;
 }
+
+@media (max-width: 1199px) {
+  .container {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 424px) {
+  .container {
+    padding: 0 10px;
+    overflow: hidden;
+  }
+}

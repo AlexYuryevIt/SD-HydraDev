@@ -2,20 +2,25 @@
 @import "../vendor/fonts.css";
 @import "../pages/index.css";
 @import "../blocks/page/page.css";
-@import "../blocks/joinform/joinform.css";
 /* ------------------------------------------------------------------------------- */
-
 
 @import "../blocks/components/container.css";
 @import "../blocks/components/header.css";
 @import "../blocks/components/main.css";
 @import "../blocks/components/build.css";
 
+@import "../blocks/components/intro.css";
+@import "../blocks/components/services.css";
+@import "../blocks/components/joinform.css";
+@import "../blocks/styles/technologies.css";
+@import "../blocks/styles/gallery.css";
+
 .btn {
    padding: 16px 0 17px 0;
    height: 48px;
    display: flex;
    justify-content: center;
+   align-items: center;
    font-weight: 700;
    font-size: 12px;
    line-height: 15px;
@@ -26,6 +31,13 @@
    transition: all .3s ease-in-out;
 }
 .btn:hover {
-   color: black;
-   box-shadow: 0px 0px 15px 5px #8176AF;
+  color: black;
+  box-shadow: 0px 0px 15px 5px #8176af;
+}
+
+@media (max-width: 767px) {
+  .btn {
+    font-size: 14px;
+    line-height: 17px;
+  }
 }

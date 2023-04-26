@@ -1,0 +1,137 @@
+h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+}
+h3 {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 44px;
+}
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+}
+.intro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 97px;
+}
+.intro__vector-7 {
+    display: block;
+    position: absolute;
+    top: 212px;
+    max-width: 1449px;
+}
+.intro__vector-8 {
+    display: block;
+    position: absolute;
+    top: 497px;
+    max-width: 1449px;
+}
+.intro__inner{
+    display: flex;
+    justify-content: space-between;
+    gap: 111px;
+    margin-bottom: 97px;
+}
+.intro__inner-left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 524px;
+}
+.intro-arrow_right {
+    position: absolute;
+    display: block;
+    bottom: -26px;
+    left: 280px;
+}
+.intro__inner-right {
+    max-width: 652px;
+}
+.about__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 118px;
+    margin-bottom: 111px;
+}
+.about_title-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 42px;
+}
+.about__inner-left_img {
+    display: block;
+    position: relative;
+    width: 524px;
+    height: 557px;
+}
+.about__inner-right {
+    position: relative;
+    padding-top: 50px;
+    max-width: 630px;
+}
+.about-link {
+    width: 214px;
+    margin-top: 28px;
+}
+@media (max-width:1199px) {
+    .intro-arrow_right {
+        display: none;
+    }
+    .intro__inner{
+        gap: 50px;
+    }
+    .about__inner {
+        gap: 50px;
+    }
+}
+@media (max-width:767px) {
+    h2, h3 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .text {
+        width: 100%;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .intro__vector-7,
+    .intro__vector-8,
+    .intro__inner-right,
+    .about_title-wrapper {
+        display: none;
+    }
+    .intro {
+        gap: 0;
+    }
+    .intro__inner {
+        justify-content: center;
+        margin-bottom: 36px;
+    }
+    .about__inner {
+        flex-direction: column;
+        gap: 51px;
+        margin-bottom: 60px;
+    }
+    .about__inner-left_img {
+        margin: 0 auto;
+        width: 337px;
+        height: 358px;
+    }
+    .about__inner-right {
+        text-align: center;
+        padding-top: 0;
+        width: 100%;
+    }
+    .about-link {
+        width: 276px;
+        margin: auto;
+        margin-top: 34px;
+    }
+}

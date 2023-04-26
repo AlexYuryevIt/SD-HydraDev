@@ -3,33 +3,33 @@
 
 <head>
   <title>HYDRA VR</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-  <meta name="format-detection" content="telephone=no" />
-  <meta name="description" content="Dive Into The Depths Of Virtual Reality" />
-  <meta name="keywords" content="Dive Into The Depths Of Virtual Reality" />
-  <meta name="Author" content="SD. Software Engineers" />
-  <meta name="Copyright" content="SD. Software Engineers" />
-  <meta name="Address" content="planet: Earth" />
-  <meta http-equiv="refresh" content="; url=index.html" />
-  <meta property="og:locale" content="ru_RU" />
-  <meta property="og:type" content="article" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta property="og:title" content="HYDRA VR" />
-  <meta name="twitter:title" content="HYDRA VR" />
-  <meta property="og:description" content="Dive Into The Depths Of Virtual Reality" />
-  <meta property="og:image" content="Img/logo/01.png" />
-  <meta property="twitter:image" content="Img/logo/01.png" />
-  <meta property="og:url" content="https://alexyuryevit.github.io/SD-HydraDev/" />
-  <meta property="og:site_name" content="HYDRA" />
-  <!-- Сделать favicon! -->
-  <!-- <link rel="icon" href="./Img/favicon.ico" type="image/x-icon"> -->
-  <link rel="stylesheet" href="./pages/index.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="description" content="Dive Into The Depths Of Virtual Reality">
+  <meta name="keywords" content="Dive Into The Depths Of Virtual Reality">
+  <meta name="Author" content="SD. Software Engineers">
+  <meta name="Copyright" content="SD. Software Engineers">
+  <meta name="Address" content="planet: Earth">
+  <meta http-equiv="refresh" content="; url=index.html">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:title" content="HYDRA VR">
+  <meta name="twitter:title" content="HYDRA VR">
+  <meta property="og:description" content="Dive Into The Depths Of Virtual Reality">
+  <meta property="og:image" content="Img/logo/01.png">
+  <meta property="twitter:image" content="Img/logo/01.png">
+  <meta property="og:url" content="https://alexyuryevit.github.io/SD-HydraDev/">
+  <meta property="og:site_name" content="HYDRA">
+  <link rel="icon" href="./Img/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./pages/index.css">
 </head>
 
 <body class="page">
-  <!-- <header>
-    <div class="container">
+  <div class="container">
+    <header class="header">
+
       <div class="header__inner">
         <div class="header__logo">
           <img src="./Img/logo/logo.svg" alt="Shape Logo">
@@ -45,12 +45,29 @@
           <a data-goto="#contacts" href="contacts/" class="header__btn btn link">Contact Us</a>
           <a data-goto="#join" href="join/" class="header__btn btn link">Join Hydra</a>
         </div>
+        <div class="burger__icon"><span></span></div>
+        <div class="burger">
+          <div class="burger__body">
+            <div class="burger__menu">
+              <a data-goto="#about" href="about/" class="link">About</a>
+              <a data-goto="#services" href="services/" class="link">Services</a>
+              <a data-goto="#technologies" href="technologies/" class="link">Technologies</a>
+              <a data-goto="#howto" href="howto/" class="link">How to</a>
+            </div>
+            <div class="burger__footer">
+              <a data-goto="#contacts" href="contacts/" class="header__btn btn link">Contact Us</a>
+              <a data-goto="#join" href="join/" class="header__btn btn link">Join Hydra</a>
+            </div>
+            <a class="burger__close" href="#!"><img src="./Img/icon/close.png" alt="Close button"></a>
+          </div>
+        </div>
       </div>
-  </header> -->
-  <!-- <section class="main">
-    <div class="container">
+  </header>
+  
+    <section class="main">
+      <div class="container">
       <div class="main__inner">
-        <div class="main__inner-left">
+        <div class="main__inner-text">
           <div class="main__title">
             <p><span>Dive</span> Into The Depths</p>
             <p>Of <span>Virtual Reality</span></p>
@@ -79,7 +96,7 @@
             <img src="./Img/vector/arrow__R.svg" alt="Arrow Right">
           </div>
         </div>
-        <div class="main__inner-right">
+        <div class="main__inner-picture">
           <div class="main__picture">
             <img src="./Img/content/main__GirlInVr.jpg" alt="Girl in vr glasses">
             <svg class="vector-one" width="416" height="675" viewBox="0 0 416 675" fill="none"
@@ -128,29 +145,276 @@
           </div>
         </div>
         <div class="main__contacts">
-          <div class="contact__place">
-            <img src="./Img/icon/map__dot.svg" alt="Map Point">
-            <div class="place__text">
-              <p>Pay Us a Visit</p>
-              <a href="https://www.google.com/maps/@47.6097245,-122.3346603,3a,75y,198.29h,117.86t/data=!3m6!1e1!3m4!1s45oy4nWCWvpaaWoRZBvJHA!2e0!7i16384!8i8192"
-                target="_blank">Union
-                St, Seattle, WA 98101, United States</a>
+          <div class="desktop">
+            <div class="contact__place">
+              <img src="./Img/icon/map__dot.svg" alt="Map Point">
+              <div class="place__text">
+                <p>Pay Us a Visit</p>
+                <a href="https://www.google.com/maps/@47.6097245,-122.3346603,3a,75y,198.29h,117.86t/data=!3m6!1e1!3m4!1s45oy4nWCWvpaaWoRZBvJHA!2e0!7i16384!8i8192"
+                  target="_blank">Union
+                  St, Seattle, WA 98101, United States</a>
+              </div>
+            </div>
+            <div class="contact__phone">
+              <img src="./Img/icon/phone.svg" alt="Phone">
+              <div class="place__text">
+                <p>Give Us a Call</p>
+                <a href="tel:(110) 1111-1010">(110) 1110-1010</a>
+              </div>
+            </div>
+            <div class="contact__massage">
+              <img src="./Img/icon/message.svg" alt="Post Message">
+              <div class="place__text">
+                <p>Send Us a Message</p>
+                <a href="mailto:Contact@HydraVTech.com">Contact@HydraVTech.com</a>
+              </div>
             </div>
           </div>
-          <div class="contact__phone">
-            <img src="./Img/icon/phone.svg" alt="Phone">
-            <div class="place__text">
-              <p>Give Us a Call</p>
-              <a href="tel:(110) 1111-1010">(110) 1111-1010</a>
+          <div class="slider">
+            <div class="contact__place slider__item">
+              <img src="./Img/icon/map__dot.svg" alt="Map Point">
+              <div class="place__text">
+                <p>Pay Us a Visit</p>
+                <a href="https://www.google.com/maps/@47.6097245,-122.3346603,3a,75y,198.29h,117.86t/data=!3m6!1e1!3m4!1s45oy4nWCWvpaaWoRZBvJHA!2e0!7i16384!8i8192"
+                  target="_blank">Union
+                  St, Seattle, WA 98101, United States</a>
+              </div>
+            </div>
+            <div class="contact__phone slider__item">
+              <img src="./Img/icon/phone.svg" alt="Phone">
+              <div class="place__text">
+                <p>Give Us a Call</p>
+                <a href="tel:(110) 1111-1010">(110) 1110-1010</a>
+              </div>
+            </div>
+            <div class="contact__massage slider__item">
+              <img src="./Img/icon/message.svg" alt="Post Message">
+              <div class="place__text">
+                <p>Send Us a Message</p>
+                <a href="mailto:Contact@HydraVTech.com">Contact@HydraVTech.com</a>
+              </div>
             </div>
           </div>
-          <div class="contact__massage">
-            <img src="./Img/icon/message.svg" alt="Post Message">
-            <div class="place__text">
-              <p>Send Us a Message</p>
-              <a href="mailto:Contact@HydraVTech.com">Contact@HydraVTech.com</a>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section id="about" class="intro">
+    <div class="container">
+      <div class="intro__inner">
+          <div class="intro__inner-left">
+              <h2>INTRODUCTION</h2>
+              <h3>TO HYDRA VR</h3>
+              <img class="intro-arrow_right" src="./Img/vector/arrow_right.png" alt="arrow right">
+          </div>
+          <div class="intro__inner-right">
+              <p class="text">
+                  Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat
+                  nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo
+                  quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare
+                  lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
+              </p>
+          </div>
+      </div>
+      <img class="intro__vector-7" src="./Img/vector/Vector 7.png" alt="vector">
+      <img class="intro__vector-8" src="./Img/vector/Vector 8.png" alt="vector">
+      <div class="about__inner">
+          <div class="about__inner-left">
+              <img class="about__inner-left_img" src="./Img/content/about-mask.png" alt="man in virtual reality mask" />
+          </div>
+          <div class="about__inner-right">
+              <div class="about_title-wrapper">
+                <h2>ABOUT</h2>
+                <h3>HYDRA VR</h3>
+              </div>
+              <p class="text">
+                  Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus
+                  urna neque viverra justo. Vivamus at augue eget arcu dictum. Ultrices gravida
+                  dictum fusce ut placerat orci. Aenean et tortor at risus viverra adipiscing at in.
+                  Mattis aliquam faucibus purus in massa. Est placerat in egestas erat imperdiet
+                  sed. Consequat semper viverra nam libero justo laoreet sit amet. Aliquam
+                  etiam erat velit scelerisque in dictum non consectetur a. Laoreet sit amet
+                  cursus sit amet. Vel eros donec ac odio tempor orci dapibus. Sem nulla pha
+                  retra diam sit amet nisl suscipit adipiscing bibendum. Leo a diam sollicitudi
+                  n tempor.
+              </p>
+              <a class="btn about-link" href="#join">LET’S GET IN TOUCH</a>
+          </div>
+      </div>
+    </div>
+  </section>
+  <section class="services" id="services">
+    <div class="container">
+      <div class="services__inner">
+        <div class="services__information">
+          <h2 class="services__header">WHY BUILD</h2>
+          <p class="services__subtext">WITH HYDRA?</p>
+        </div>
+        <div class="services__description">
+          <p class="services__text">
+            Vitae sapien pellentesque habitant morbi tristique senectus et
+            netus et. Feugiat nibh sed pulvinar proin gravida hendrerit
+            lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt
+            nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet
+            est placerat in. Lectus magna fringilla urna porttitor rhoncus
+            vitae.
+          </p>
+        </div>
+      </div>
+      <div class="services__gallery">
+        <ul class="services__cards-grid">
+          <li class="services__card gallery__slide_active">
+            <div class="services__card-img_shadow">
+              <img
+                src="./Img/content/simulation-card.png"
+                alt="Girl in black vr glasses"
+                class="services__card-img"
+              />
+            </div>
+            <p class="services__card-title">SIMULATION</p>
+            <div class="services__card_divider"></div>
+            <p class="services__card-text">
+              Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
+              porttitor rhoncus libero justo laoreet sit amet vitae.
+            </p>
+            <a class="btn" href="/">TRY IT NOW</a>
+          </li>
+          <li class="services__card">
+            <div class="services__card-img_shadow">
+              <img
+                src="./Img/content/education-card.png"
+                alt="Guy in white vr glasses"
+                class="services__card-img"
+              />
+            </div>
+            <p class="services__card-title">EDUCATION</p>
+            <div class="services__card_divider"></div>
+            <p class="services__card-text">
+              Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
+              porttitor rhoncus libero justo laoreet sit amet vitae.
+            </p>
+            <a class="btn" href="/">TRY IT NOW</a>
+          </li>
+          <li class="services__card">
+            <div class="services__card-img_shadow">
+              <img
+                src="./Img/content/self-care-card.png"
+                alt="A girl in vr glasses does yoga"
+                class="services__card-img"
+              />
+            </div>
+            <p class="services__card-title">SELF-CARE</p>
+            <div class="services__card_divider"></div>
+            <p class="services__card-text">
+              Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
+              porttitor rhoncus libero justo laoreet sit amet vitae.
+            </p>
+            <a class="btn" href="/">TRY IT NOW</a>
+          </li>
+          <li class="services__card">
+            <div class="services__card-img_shadow">
+              <img
+                src="./Img/content/outdoor-card.png"
+                alt="A man in vr glasses outside"
+                class="services__card-img"
+              />
+            </div>
+            <p class="services__card-title">OUTDOOR</p>
+            <div class="services__card_divider"></div>
+            <p class="services__card-text">
+              Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
+              porttitor rhoncus libero justo laoreet sit amet vitae.
+            </p>
+            <a class="btn" href="/">TRY IT NOW</a>
+          </li>
+        </ul>
+        <div class="services__card-controls">
+          <div class="container">
+            <div class="services__controls">
+              <button class="gallery__control-prev">
+                <div class="gallery__control-prev_shadow1">
+                  <div class="gallery__control-prev_shadow2">
+                    <img
+                      class="gallery__control-img"
+                      src="./Img/icon/control-prev.png"
+                      alt="Левая стрелка"
+                    />
+                  </div>
+                </div>
+              </button>
+              <button class="gallery__control-next">
+                <div class="gallery__control-next_shadow1">
+                  <div class="gallery__control-next_shadow2">
+                    <img
+                      class="gallery__control-img"
+                      src="./Img/icon/control-next.png"
+                      alt="Правая стрелка"
+                    />
+                  </div>
+                </div>
+              </button>
             </div>
           </div>
+        </div> 
+      </div>
+    </div>
+  </section>
+
+  <section class="technologies">
+    <div class="container">
+      <div class="technologies__content">
+        <picture>
+          <source srcset="resources/images/block__inner1/mask_group_mobile.png" media="(max-width:500px)">
+          <img class="technologies__content-img" src="resources/images/block__inner1/mask_group.png"
+            alt="Девушка с прибором виртуальной реальности">
+        </picture>
+        <div class="technologies__information">
+          <h2 class="technologies__header">TECHNOLOGIES & HARDWARE</h2>
+          <p class="technologies__text">USED BY HYDRA VR.</p>
+        </div>
+        <!-- Кнопка стрелки вниз -->
+        <img class="js-hydra-tech-arrows__btn hydra-tech-arrows__btn technologies__technologies__button_show-hide" src="resources/icon/arrow-upwards.png" alt="Стлелка">
+      </div>
+      <div class="js-hydra-tech hydra-tech">
+        <div class="hydra-tech__slides">
+          <a class="hydra-tech__link" href="https://www.unrealengine.com/en-US"><img
+              class="hydra-tech__img hydra-tech_modifier-img1 reveal-slide"
+              src="resources/images/block__inner2/hydra-tech1.png" alt="Unreal" class="hydra-tech__images"></a>
+          <a class="hydra-tech__link" href="https://unity.com/ru"><img class="hydra-tech__img hydra-tech_modifier-img2"
+              src="resources/images/block__inner2/hydra-tech2.png" alt="Unity" class="hydra-tech__images"></a>
+          <a class="hydra-tech__link" href="https://oculus.com/"><img class="hydra-tech__img hydra-tech_modifier-img3"
+              src="resources/images/block__inner2/hydra-tech3.png" alt="Oculus" class="hydra-tech__images"></a>
+          <a class="hydra-tech__link" href="https://www.vive.com/ru/"><img
+              class="hydra-tech__img hydra-tech_modifier-img4" src="resources/images/block__inner2/hydra-tech4.png"
+              alt="Vive" class="hydra-tech__images"></a>
+        </div>
+        <!-- Стрелки слайдера -->
+        <div id="btn-elements" class="hydra-tech-arrows hide-block">
+            <img class="hydra-tech-arrows__btn gallery__btn-prev" src="resources/icon/arrow-prev.png"
+              alt="Стлелка влево">
+            <img class="hydra-tech-arrows__btn gallery__btn-next" src="resources/icon/arrow-next.png"
+              alt="Стлелка вправо">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="join" class="joinform">
+    <div class="container">
+      <div class="joinform__inner">
+        <h2 class="joinform__title">JOIN HYDRA</h2>
+        <div class="joinform__divider"></div>
+        <p class="joinform__subtitle">Let’s Build Your VR Experience</p>
+        <form class="inputs-list inputs-list_short">
+          <input type="text" name="name" class="input input_short" placeholder="First Name">
+          <input type="text" name="name" class="input input_short" placeholder="Last Name">
+          <input type="email" name="email" class="input input_short" placeholder="Email">
+          <input type="tel" name="phone" class="input input_short" placeholder="Phone Number">
+          <input type="text" class="input input_fullwidth" placeholder="Subject">
+          <textarea class="input input_fullwidth input_textarea" name="story" cols="130"
+            placeholder="Tell Us Something..." spellcheck="true" maxlength="1000"></textarea>
+        </form>
+        <div class="joinform__btn">
+          <button class="btn btn_send">Send to Hydra</button>
         </div>
       </div>
     </div>
@@ -202,7 +466,14 @@
         </div>
       </div>
   </section>
+  
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/services.js"></script>
+  <script src="scripts/slider.js"></script>
   <script src="number_slide.js"></script>
+  <script src="scripts/gallery.js"></script>
 </body>
 
 </html>
