@@ -32,7 +32,7 @@ header .header__inner .header__buttons {
   display: flex;
   gap: 38px;
 }
-header .header__inner .header__buttons .header__btn {
+header .header__inner .header__buttons .btn_short {
   width: 154px;
 }
 header .header__inner .header__buttons :first-child {
@@ -54,7 +54,7 @@ header .header__inner .header__buttons :first-child {
   }
 }
 @media (max-width:920px) {
-  header .header__inner .header__buttons .header__btn {
+  header .header__inner .header__buttons .btn_short {
     width: 100px;
   }
 }
@@ -190,7 +190,6 @@ header .header__inner .header__buttons :first-child {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 170px;
   }
   .burger__close {
     position: absolute;

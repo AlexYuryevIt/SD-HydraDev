@@ -17,6 +17,9 @@
   justify-content: space-between;
   gap: 117px;
 }
+.services__gallery {
+  padding: 0 20px;
+}
 
 .services__header {
   margin-bottom: 15px;
@@ -83,6 +86,7 @@
 .services__card-text {
   padding: 21px 29px 35px;
   font-size: 12px;
+  text-align: center;
   line-height: 19px;
 }
 
@@ -113,26 +117,10 @@
   border: 1px solid rgba(192, 183, 232, 0.33);
 }
 
-.btn {
-  padding: 16px 39px;
-  max-width: 154px;
+.services__btn {
   margin: 0 auto 36px;
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
-  border-radius: 40px;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
-  color: #343045;
-  transition: all 0.3s ease-in-out;
 }
 
-.btn:hover {
-  color: black;
-  box-shadow: 0px 0px 15px 5px #8176af;
-}
 
 .services__card-controls {
   display: none;
