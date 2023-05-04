@@ -17,6 +17,7 @@
 
 .btn {
    padding: 16px 0 17px 0;
+   width: 214px;
    height: 48px;
    display: flex;
    justify-content: center;
@@ -29,6 +30,9 @@
    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
    border-radius: 40px;
    transition: all .3s ease-in-out;
+}
+.btn_short {
+  width: 154px;
 }
 .btn:hover {
   color: black;
