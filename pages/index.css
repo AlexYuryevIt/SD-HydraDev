@@ -14,6 +14,7 @@
 @import "../blocks/components/joinform.css";
 @import "../blocks/styles/technologies.css";
 @import "../blocks/styles/gallery.css";
+@import "../blocks/styles/footer.css";
 
 .btn {
    padding: 16px 0 17px 0;
