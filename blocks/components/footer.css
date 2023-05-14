@@ -1,19 +1,71 @@
 footer {
+}
+
+.footer__inner{
+   padding-bottom: 70px;
+   display: flex;
+   justify-content: space-between;
+   border-bottom: 1px solid transparent;
+   position: relative;
+   margin-bottom: 100px;
+}
+
+.footer__inner::after{
+   content: url('../../Img/vector/border-gradient.png');
+   display: block;
+   width: 100%;
+   height: 2px;
+
+   position: absolute;
+   bottom: 0px;
+}
+
+
+
+.footer__logo img{
+   display: block;
+   width: 187px;
+   height: auto;
+}
+
+.footer__menu {
    display: flex;
 }
-.footer__logo {
-}
-.footer__menu {
-}
-.header__nav {
-}
+
 .header__nav_footer {
+   display: flex;
+   flex-direction: column;
+}
+
+.footer__FAQ{
+   
 }
 .link {
+   margin-bottom: 20px;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 20px;
+   color: #FFFFFF;
+}
+
+.link:last-child{
+   margin-bottom: 0px;
 }
 .footer__socials {
 }
 .socials__title {
+   margin-bottom: 39px;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 20px;
+   color: #FFFFFF;
+}
+
+.socials__images{
+   margin-bottom: 49px;
+   display: flex;
+   column-gap: 20px;
+
 }
 .main__btn {
 }
@@ -22,4 +74,10 @@ footer {
 .link {
 }
 .footer__copyrights {
+   padding-bottom: 50px;
+   text-align: center;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 17px;
+   color: #FFFFFF;
 }

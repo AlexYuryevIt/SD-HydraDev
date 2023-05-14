@@ -184,8 +184,6 @@ header .header__inner .header__buttons :first-child {
   .burger__menu a {
     color: #FFFFFF;
   }
-  .link {
-  }
   .burger__footer {
     display: flex;
     flex-direction: column;
